@@ -86,7 +86,7 @@ export const FlexDiv = styled.div`
 
 export const ContentDiv = styled.div`
     display:flex;
-    height: 100px;
+    height: 70px;
     
 `;
 

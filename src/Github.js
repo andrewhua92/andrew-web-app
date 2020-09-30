@@ -15,9 +15,9 @@ const Github = () => {
     }, []);
 
     return (
-        <SmoothDiv>
+        <SmoothDiv out={visible}>
             <MyHeader1>
-               PROJECTS
+               Projects
             </MyHeader1>
             <MyParagraph>
                 GITHUB HERE

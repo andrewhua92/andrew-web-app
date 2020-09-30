@@ -12,7 +12,11 @@ import Home from './Home';
 import Github from './Github';
 import Contact from './Contact';
 
-
+// TO DO: get github tab filled out
+// maybe fix contact info
+// make home content more homey
+// make sure this works on mobile (maybe)
+// dude, remove that white sliver (i thought this shit was 100vw wtf)
 const Content = () => {
 
     const [value, setValue] = useState(0)

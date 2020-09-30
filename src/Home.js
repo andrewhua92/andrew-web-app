@@ -35,8 +35,8 @@ const Home = () => {
                 CARobotics, CareGuide, and XE.com.
                 <br/>
                 <br/>
-                My tech stack so far: Java, C++, C, VHDL, and
-                Git, Python, OpenCV, React.js, Ruby, and GraphQL.
+                My tech stack so far: Java, C++, C, VHDL, Git, Python, OpenCV,
+                Javascript, React.js, Ruby, and GraphQL.
                 <br/>
                 <br/>
                 This web app was made using React.js, styled-components,
