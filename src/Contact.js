@@ -5,7 +5,7 @@ import {
     SmoothDiv
 } from './Styled'
 
-const Github = () => {
+const Contact = () => {
 
     const [visible, setVisible] = useState(false);
     
@@ -17,13 +17,13 @@ const Github = () => {
     return (
         <SmoothDiv>
             <MyHeader1>
-               PROJECTS
+                Contact Information
             </MyHeader1>
             <MyParagraph>
-                GITHUB HERE
+               HIHIHIHIHI
             </MyParagraph>
         </SmoothDiv>
     )
 }
 
-export default Github
+export default Contact
