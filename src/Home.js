@@ -23,7 +23,7 @@ const Home = () => {
                 My name is Andrew Hua, a 3A Computer Engineering student at
                 the University of Waterloo. Here, you can take a look at my
                 pretty background, go check my tabs for my GitHub projects,
-                and other contact information. 
+                or look at my other contact information. 
                 <br/>
                 <br/>
                 I take great interests in the realm of entertainment, whether
@@ -36,7 +36,7 @@ const Home = () => {
                 <br/>
                 <br/>
                 My tech stack so far: Java, C++, C, VHDL, Git, Python, OpenCV,
-                Javascript, React.js, Ruby, and GraphQL.
+                Javascript, React.js, Ruby on Rails, and GraphQL.
                 <br/>
                 <br/>
                 This web app was made using React.js, styled-components,

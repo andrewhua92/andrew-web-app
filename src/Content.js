@@ -17,6 +17,7 @@ import Contact from './Contact';
 // make home content more homey
 // make sure this works on mobile (maybe)
 // dude, remove that white sliver (i thought this shit was 100vw wtf)
+
 const Content = () => {
 
     const [value, setValue] = useState(0)

@@ -11,9 +11,9 @@ export const Background = styled.div`
     display: inline-block;
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    margin-left: -10px;
-    margin-top: -10px;
+    position: fixed;
+    margin-left: -8px;
+    margin-top: -8px;
     background: linear-gradient(270deg, #8154c8, #4b79cf, #4bc5cf);
     background-size: 400% 400%;
     animation: pulse 180s ease infinite;
@@ -38,7 +38,7 @@ export const MyPaper = styled(Paper)`
     margin: auto;
     margin-top: 40px;
     && {
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.4);
     }
 `;
 
