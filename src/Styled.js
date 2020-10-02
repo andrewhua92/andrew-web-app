@@ -38,7 +38,7 @@ export const MyPaper = styled(Paper)`
     margin: auto;
     margin-top: 40px;
     && {
-        background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,0.3);
     }
 `;
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
     MyHeader1,
-    MyParagraph,
     SmoothDiv
 } from './Styled';
 import List from '@material-ui/core/List';

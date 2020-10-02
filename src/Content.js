@@ -29,7 +29,7 @@ const Content = () => {
     return (
         <div>
             <ContentDiv style={{width: '90%'}}>
-                <MyAvatar alt='Andrew Hua' src='my_face.JPG'/>
+                <MyAvatar alt='Andrew Hua' src='../public/my_face.JPG'/>
                 <MyTabs
                     value={value}
                     onChange={handleChange}
