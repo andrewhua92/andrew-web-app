@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/andrew-web-app/static/js/main.903be5ce.chunk.js",
-    "main.js.map": "/andrew-web-app/static/js/main.903be5ce.chunk.js.map",
+    "main.js": "/andrew-web-app/static/js/main.f952e486.chunk.js",
+    "main.js.map": "/andrew-web-app/static/js/main.f952e486.chunk.js.map",
     "runtime-main.js": "/andrew-web-app/static/js/runtime-main.de416a35.js",
     "runtime-main.js.map": "/andrew-web-app/static/js/runtime-main.de416a35.js.map",
     "static/css/2.beaa289f.chunk.css": "/andrew-web-app/static/css/2.beaa289f.chunk.css",
     "static/js/2.363007bd.chunk.js": "/andrew-web-app/static/js/2.363007bd.chunk.js",
     "static/js/2.363007bd.chunk.js.map": "/andrew-web-app/static/js/2.363007bd.chunk.js.map",
     "index.html": "/andrew-web-app/index.html",
-    "precache-manifest.7d81455e200784d4beb0e71810e5fd36.js": "/andrew-web-app/precache-manifest.7d81455e200784d4beb0e71810e5fd36.js",
+    "precache-manifest.cc3128ee9a58ae9f9a5a8bac14fdf5e3.js": "/andrew-web-app/precache-manifest.cc3128ee9a58ae9f9a5a8bac14fdf5e3.js",
     "service-worker.js": "/andrew-web-app/service-worker.js",
     "static/css/2.beaa289f.chunk.css.map": "/andrew-web-app/static/css/2.beaa289f.chunk.css.map",
     "static/js/2.363007bd.chunk.js.LICENSE.txt": "/andrew-web-app/static/js/2.363007bd.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.de416a35.js",
     "static/css/2.beaa289f.chunk.css",
     "static/js/2.363007bd.chunk.js",
-    "static/js/main.903be5ce.chunk.js"
+    "static/js/main.f952e486.chunk.js"
   ]
 }
