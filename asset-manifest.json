@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/andrew-web-app/static/js/main.916ca57b.chunk.js",
-    "main.js.map": "/andrew-web-app/static/js/main.916ca57b.chunk.js.map",
+    "main.js": "/andrew-web-app/static/js/main.903be5ce.chunk.js",
+    "main.js.map": "/andrew-web-app/static/js/main.903be5ce.chunk.js.map",
     "runtime-main.js": "/andrew-web-app/static/js/runtime-main.de416a35.js",
     "runtime-main.js.map": "/andrew-web-app/static/js/runtime-main.de416a35.js.map",
     "static/css/2.beaa289f.chunk.css": "/andrew-web-app/static/css/2.beaa289f.chunk.css",
-    "static/js/2.d100f6d5.chunk.js": "/andrew-web-app/static/js/2.d100f6d5.chunk.js",
-    "static/js/2.d100f6d5.chunk.js.map": "/andrew-web-app/static/js/2.d100f6d5.chunk.js.map",
+    "static/js/2.363007bd.chunk.js": "/andrew-web-app/static/js/2.363007bd.chunk.js",
+    "static/js/2.363007bd.chunk.js.map": "/andrew-web-app/static/js/2.363007bd.chunk.js.map",
     "index.html": "/andrew-web-app/index.html",
-    "precache-manifest.c4e28e981f97b9e20bf0c38f15115764.js": "/andrew-web-app/precache-manifest.c4e28e981f97b9e20bf0c38f15115764.js",
+    "precache-manifest.7d81455e200784d4beb0e71810e5fd36.js": "/andrew-web-app/precache-manifest.7d81455e200784d4beb0e71810e5fd36.js",
     "service-worker.js": "/andrew-web-app/service-worker.js",
     "static/css/2.beaa289f.chunk.css.map": "/andrew-web-app/static/css/2.beaa289f.chunk.css.map",
-    "static/js/2.d100f6d5.chunk.js.LICENSE.txt": "/andrew-web-app/static/js/2.d100f6d5.chunk.js.LICENSE.txt",
+    "static/js/2.363007bd.chunk.js.LICENSE.txt": "/andrew-web-app/static/js/2.363007bd.chunk.js.LICENSE.txt",
     "static/media/index.css": "/andrew-web-app/static/media/roboto-vietnamese-400-normal.a8be5b46.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.de416a35.js",
     "static/css/2.beaa289f.chunk.css",
-    "static/js/2.d100f6d5.chunk.js",
-    "static/js/main.916ca57b.chunk.js"
+    "static/js/2.363007bd.chunk.js",
+    "static/js/main.903be5ce.chunk.js"
   ]
 }
