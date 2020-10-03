@@ -48,7 +48,7 @@ const Github = () => {
                 </ListItemLink>
                 <Divider/>
                 <ListItemLink
-                href="https://www.github.com/andrewhua92/SunTracker/"
+                href="https://github.com/andrewhua92/SunTracker/"
                 target="_blank"
                 >
                     <ListItemIcon>

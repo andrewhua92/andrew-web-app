@@ -25,11 +25,10 @@ const Content = () => {
     const handleChange = (e, newValue) => {
         setValue(newValue)
     }
-
     return (
         <div>
             <ContentDiv style={{width: '90%'}}>
-                <MyAvatar alt='Andrew Hua' src='../public/my_face.JPG'/>
+                <MyAvatar alt='Andrew Hua' src="https://github.com/andrewhua92/andrew-web-app/blob/8df3ec58e5b4f31da225f8a0328bb7f871ed8234/public/my_face.JPG"/>
                 <MyTabs
                     value={value}
                     onChange={handleChange}
