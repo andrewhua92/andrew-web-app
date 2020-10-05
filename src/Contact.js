@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {
     MyHeader1,
     SmoothDiv,
+    MyList
 } from './Styled';
-import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -32,7 +32,7 @@ const Contact = () => {
                 Contact Information
             </MyHeader1>
             <div>
-                <List>
+                <MyList>
                     <ListItem>
                         <ListItemIcon>
                             <InboxIcon />
@@ -51,9 +51,9 @@ const Contact = () => {
                         secondary="a5hua@uwaterloo.ca"
                         />
                     </ListItem>
-                </List>
-                <Divider />
-                <List>
+                </MyList>
+                <Divider style={{ maxWidth: '40rem', margin: 'auto'}}/>
+                <MyList>
                     <ListItemLink 
                     href="https://www.github.com/andrewhua92/"
                     target="_blank"
@@ -77,7 +77,7 @@ const Contact = () => {
                         secondary="linkedin.com/in/andrew-hua90"
                         />
                     </ListItemLink>
-                </List>
+                </MyList>
             </div>
         </SmoothDiv>
     )

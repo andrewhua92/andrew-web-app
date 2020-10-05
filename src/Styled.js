@@ -2,7 +2,8 @@ import styled, { keyframes } from 'styled-components';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Avatar from '@material-ui/core/Avatar'
+import Avatar from '@material-ui/core/Avatar';
+import List from '@material-ui/core/List';
 
 import "fontsource-lato";
 import "fontsource-roboto";
@@ -32,12 +33,12 @@ export const Background = styled.div`
 `;
 
 export const MyPaper = styled(Paper)`
-    display: flex;
-    width: 70vw;
-    height: 90vh;
-    margin: auto;
-    margin-top: 40px;
     && {
+        display: flex;
+        width: 70vw;
+        height: 90vh;
+        margin: auto;
+        margin-top: 40px;
         background: rgba(0,0,0,0.3);
     }
 `;
@@ -60,22 +61,22 @@ export const MyTab = styled(Tab)`
 
 export const MyAvatar = styled(Avatar)`
     && {
-        height: 150px;
-        width: 150px;
-        margin: 30px;
+        height: 6rem;
+        width: 6rem;
+        margin: 3rem;
     }
 `;
 
 export const MyHeader1 = styled.h1`
     width:100%;
     text-align: center;
-
+    font-size: 1.7      rem;
     font-family: 'Lato', sans-serif;
     
 `;
 
 export const MyParagraph = styled.p`
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-family: 'Lato', sans-serif;
 `;
 
@@ -84,10 +85,15 @@ export const FlexDiv = styled.div`
     width:100%;
 `;
 
+export const HeaderContentDiv = styled.div`
+    display: flex;
+    height: 5rem;
+    width: 90%;
+`;
+
 export const ContentDiv = styled.div`
-    display:flex;
-    height: 70px;
-    
+    display: flex;
+    height: 7rem;
 `;
 
 const fadeIn = keyframes`
@@ -114,8 +120,16 @@ const fadeOut = keyframes`
 // https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load
 export const SmoothDiv = styled.div`
     width: 75%;
+    margin: auto;
     visibility: ${props => props.out ? 'hidden' : 'visible'};
     animation: ${props => props.out ? fadeOut : fadeIn} 1s linear;
     transition: visibility 1s linear;
   
-`
+`;
+
+export const MyList = styled(List)`
+    &&{
+        max-width: 40rem;
+        margin: auto;
+    }
+`;

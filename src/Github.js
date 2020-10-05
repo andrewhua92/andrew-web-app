@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import {
     MyHeader1,
-    SmoothDiv
+    SmoothDiv,
+    MyList
 } from './Styled';
-import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -33,7 +33,7 @@ const Github = () => {
             <MyHeader1>
                Projects
             </MyHeader1>
-            <List>
+            <MyList>
                 <ListItemLink
                 href="https://github.com/andrewhua92/andrew-web-app/"
                 target="_blank"
@@ -108,7 +108,7 @@ const Github = () => {
                     secondary="Amateur attempt at recreating Chess in Java!"
                     />
                 </ListItemLink>
-            </List>
+            </MyList>
         </SmoothDiv>
     )
 }

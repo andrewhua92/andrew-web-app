@@ -3,7 +3,8 @@ import {
     MyTabs, 
     MyTab, 
     MyAvatar, 
-    ContentDiv 
+    ContentDiv,
+    HeaderContentDiv
 } from './Styled'
 import HomeIcon from '@material-ui/icons/Home';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -27,7 +28,7 @@ const Content = () => {
     }
     return (
         <div>
-            <ContentDiv style={{width: '90%'}}>
+            <HeaderContentDiv>
                 <MyAvatar alt='Andrew Hua' src={require('./my_face.JPG')}/>
                 <MyTabs
                     value={value}
@@ -43,8 +44,8 @@ const Content = () => {
                         icon={<FolderIcon/>}
                     />
                 </MyTabs>
-            </ContentDiv>
-            <ContentDiv style={{marginLeft: "250px"}}>
+            </HeaderContentDiv>
+            <ContentDiv>
                 {value === 0 ? 
                 <Home/>: (value === 1 ? 
                 <Github/> : 
