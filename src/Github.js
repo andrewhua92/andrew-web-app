@@ -36,6 +36,10 @@ const Github = () => {
         query: '(min-device-width: 2560px)'
     });
 
+    const isMobile = useMediaQuery ({
+        query: '(min-device-width: 1024px)'
+    });
+
     // easier to just apply this styling than to do an individual restyle of each icon
     const iconStyling = {
         height: isLargeDesktop ? "2rem" : "",
@@ -70,14 +74,15 @@ const Github = () => {
                         href={href}
                         target="_blank"
                         >
+                            {isMobile &&
                             <ListItemIcon>
                                 {Icons[icon]}
-                            </ListItemIcon>
+                            </ListItemIcon>}
                             <ListItemText 
                             primary={primary}
                             secondary={secondary}
-                            primaryTypographyProps={{style: isLargeDesktop ? {fontSize: '2rem'} : {}}}
-                            secondaryTypographyProps={{style: isLargeDesktop ? {fontSize: '1.5rem'} : {}}}
+                            primaryTypographyProps={{style: isLargeDesktop ? {fontSize: '2rem'} : (!isMobile ? {fontSize: '0.9rem'} :{})}}
+                            secondaryTypographyProps={{style: isLargeDesktop ? {fontSize: '1.5rem'} : (!isMobile ? {fontSize: '0.65rem'} : {})}}
                             />
                         </ListItemLink>
                         <Divider/>

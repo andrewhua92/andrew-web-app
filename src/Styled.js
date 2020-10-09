@@ -5,8 +5,6 @@ import Tab from '@material-ui/core/Tab';
 import Avatar from '@material-ui/core/Avatar';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-
 
 import HomeIcon from '@material-ui/icons/Home';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -67,14 +65,15 @@ export const MyPaper = styled(Paper)`
     && {
         display: flex;
         width: 90vw;
-        height: 90vh;
+        height: 92vh;
         margin: auto;
         margin-top: 40px;
         background: rgba(0,0,0,0.3);
         overflow: hidden;
 
         @media ${device.tablet}{
-            width:70vw;
+            width: 70vw;
+            height: 90vh;
         }
 
  
@@ -84,28 +83,27 @@ export const MyPaper = styled(Paper)`
 export const MyTabs = styled(Tabs)`
     && {
         display: inline-block;
-        min-width:60vw;
+        min-width:55vw;
         height: 20px;
         margin-left:auto;
 
         @media ${device.laptopL} {
             float: left;
+            min-width: 60vw;
         }
     }
 `;
 
 export const MyTab = styled(Tab)`
     && {
-        min-width: 15vw;
-        max-width: 20vw
+        min-width: 25vw;
+        max-width: 25vw;
 
-        @media ${device.desktopL} {
-            height: 300px;
+        @media ${device.tablet} {
+            min-width:15vw;
+            max-width:20vw;
         }
-    }
 
-    @media ${device.desktopL} {
-        height: 50px;
     }
 
 `;
@@ -167,23 +165,26 @@ export const MyList = styled(List)`
 
 export const MyListItem = styled(ListItem)`
     &&{
+        
+        
     }
 `;
 
-export const MyListItemText = styled(ListItemText)`
-    &&{
 
-        @media ${device.desktopL} {
-            font-size: 2.5rem;
-        }
-    }
-`;
 
 export const MyHeader1 = styled.h1`
     width:100%;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
+
+    @media ${device.mobileM} {
+        font-size: 1.25rem;
+    }
+
+    @media ${device.tablet} {
+        font-size: 1.7rem;
+    }
     
     @media ${device.desktopL} {
         font-size: 3rem;
@@ -191,10 +192,19 @@ export const MyHeader1 = styled.h1`
 `;
 
 export const MyParagraph = styled.p`
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
     max-width: 40rem;
     margin: auto;
+
+    @media ${device.mobileM} {
+        font-size: 0.9rem;
+    }
+
+    @media ${device.laptop} {
+        font-size: 1.1rem;
+    }
+
     @media ${device.laptopL} {
         font-size: 1.3rem;
     }
@@ -215,6 +225,11 @@ export const HeaderContentDiv = styled.div`
     display: flex;
     height: 4rem;
     width: 90%;
+    margin-left: 0.5rem;
+
+    @media ${device.tablet} {
+        margin-left: 0;
+    }
 
     @media ${device.desktopL} {
         height: 7rem;
