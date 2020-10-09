@@ -4,9 +4,40 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Avatar from '@material-ui/core/Avatar';
 import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+
+
+import HomeIcon from '@material-ui/icons/Home';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FolderIcon from '@material-ui/icons/Folder';
 
 import "fontsource-lato";
 import "fontsource-roboto";
+
+// breakpoints idea courtesy of this article:
+// https://jsramblings.com/how-to-use-media-queries-with-styled-components/
+const size = {
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px'
+};
+
+export const device = {
+    mobileS: `(min-width: ${size.mobileS})`,
+    mobileM: `(min-width: ${size.mobileM})`,
+    mobileL: `(min-width: ${size.mobileL})`,
+    tablet: `(min-width: ${size.tablet})`,
+    laptop: `(min-width: ${size.laptop})`,
+    laptopL: `(min-width: ${size.laptopL})`,
+    desktop: `(min-width: ${size.desktop})`,
+    desktopL: `(min-width: ${size.desktop})`
+};
+
 
 export const Background = styled.div`
     display: inline-block;
@@ -35,11 +66,18 @@ export const Background = styled.div`
 export const MyPaper = styled(Paper)`
     && {
         display: flex;
-        width: 70vw;
+        width: 90vw;
         height: 90vh;
         margin: auto;
         margin-top: 40px;
         background: rgba(0,0,0,0.3);
+        overflow: hidden;
+
+        @media ${device.tablet}{
+            width:70vw;
+        }
+
+ 
     }
 `;
 
@@ -49,6 +87,10 @@ export const MyTabs = styled(Tabs)`
         min-width:60vw;
         height: 20px;
         margin-left:auto;
+
+        @media ${device.laptopL} {
+            float: left;
+        }
     }
 `;
 
@@ -56,7 +98,16 @@ export const MyTab = styled(Tab)`
     && {
         min-width: 15vw;
         max-width: 20vw
+
+        @media ${device.desktopL} {
+            height: 300px;
+        }
     }
+
+    @media ${device.desktopL} {
+        height: 50px;
+    }
+
 `;
 
 export const MyAvatar = styled(Avatar)`
@@ -64,20 +115,95 @@ export const MyAvatar = styled(Avatar)`
         height: 6rem;
         width: 6rem;
         margin: 3rem;
+
+        @media ${device.desktopL} {
+            height: 12rem;
+            width: 12rem;
+            margin: 5rem;
+        }
+    }
+`;
+
+export const ResponsiveHomeIcon = styled(HomeIcon)`
+    && {
+        @media ${device.desktopL} {
+            height: 2.5rem;
+            width: 2.5rem;
+            
+        }
+    }
+`;
+
+export const ResponsiveGitHubIcon = styled(GitHubIcon)`
+    && {
+        @media ${device.desktopL} {
+            height: 2.5rem;
+            width: 2.5rem;
+            
+        }
+    }
+`;
+
+export const ResponsiveFolderIcon = styled(FolderIcon)`
+    && {
+        @media ${device.desktopL} {
+            height: 2.5rem;
+            width: 2.5rem;
+            
+        }
+    }
+`;
+
+export const MyList = styled(List)`
+    &&{
+        max-width: 40rem;
+        margin: auto;
+
+        @media ${device.desktopL} {
+            max-width: 60rem;
+        }
+    }
+`;
+
+export const MyListItem = styled(ListItem)`
+    &&{
+    }
+`;
+
+export const MyListItemText = styled(ListItemText)`
+    &&{
+
+        @media ${device.desktopL} {
+            font-size: 2.5rem;
+        }
     }
 `;
 
 export const MyHeader1 = styled.h1`
     width:100%;
     text-align: center;
-    font-size: 1.7      rem;
+    font-size: 1.7rem;
     font-family: 'Lato', sans-serif;
     
+    @media ${device.desktopL} {
+        font-size: 3rem;
+    }
 `;
 
 export const MyParagraph = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
+    max-width: 40rem;
+    margin: auto;
+    @media ${device.laptopL} {
+        font-size: 1.3rem;
+    }
+
+    @media ${device.desktopL} {
+        font-size: 2.2rem;
+        max-width: 70rem;
+        margin-top:3rem;
+    }
 `;
 
 export const FlexDiv = styled.div`
@@ -87,8 +213,12 @@ export const FlexDiv = styled.div`
 
 export const HeaderContentDiv = styled.div`
     display: flex;
-    height: 5rem;
+    height: 4rem;
     width: 90%;
+
+    @media ${device.desktopL} {
+        height: 7rem;
+    }
 `;
 
 export const ContentDiv = styled.div`
@@ -127,9 +257,3 @@ export const SmoothDiv = styled.div`
   
 `;
 
-export const MyList = styled(List)`
-    &&{
-        max-width: 40rem;
-        margin: auto;
-    }
-`;

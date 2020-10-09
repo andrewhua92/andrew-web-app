@@ -13,6 +13,8 @@ import DraftsIcon from '@material-ui/icons/Drafts';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import { useMediaQuery } from 'react-responsive';
+
 function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
 }
@@ -20,6 +22,10 @@ function ListItemLink(props) {
 const Contact = () => {
 
     const [visible, setVisible] = useState(false);
+
+    const isLargeDesktop = useMediaQuery({
+        query: '(min-device-width: 2560px)'
+    });
     
     useEffect(() => {
         setVisible(true);
@@ -40,6 +46,8 @@ const Contact = () => {
                         <ListItemText 
                         primary="Personal Email"
                         secondary="andrewhua90@gmail.com" 
+                        primaryTypographyProps={{style: isLargeDesktop ? {fontSize: '2rem'} : {}}}
+                        secondaryTypographyProps={{style: isLargeDesktop ? {fontSize: '1.5rem'} : {}}}
                         />
                     </ListItem>
                     <ListItem>
@@ -49,6 +57,8 @@ const Contact = () => {
                         <ListItemText 
                         primary="University Email"
                         secondary="a5hua@uwaterloo.ca"
+                        primaryTypographyProps={{style: isLargeDesktop ? {fontSize: '2rem'} : {}}}
+                        secondaryTypographyProps={{style: isLargeDesktop ? {fontSize: '1.5rem'} : {}}}
                         />
                     </ListItem>
                 </MyList>
@@ -64,6 +74,8 @@ const Contact = () => {
                         <ListItemText
                         primary="GitHub" 
                         secondary="github.com/andrewhua92"
+                        primaryTypographyProps={{style: isLargeDesktop ? {fontSize: '2rem'} : {}}}
+                        secondaryTypographyProps={{style: isLargeDesktop ? {fontSize: '1.5rem'} : {}}}
                         />
                     </ListItemLink>
                     <ListItemLink 
@@ -75,6 +87,8 @@ const Contact = () => {
                         <ListItemText
                         primary="LinkedIn" 
                         secondary="linkedin.com/in/andrew-hua90"
+                        primaryTypographyProps={{style: isLargeDesktop ? {fontSize: '2rem'} : {}}}
+                        secondaryTypographyProps={{style: isLargeDesktop ? {fontSize: '1.5rem'} : {}}}
                         />
                     </ListItemLink>
                 </MyList>

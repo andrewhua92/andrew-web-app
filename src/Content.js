@@ -4,14 +4,17 @@ import {
     MyTab, 
     MyAvatar, 
     ContentDiv,
-    HeaderContentDiv
+    HeaderContentDiv,
+    ResponsiveHomeIcon,
+    ResponsiveGitHubIcon,
+    ResponsiveFolderIcon
 } from './Styled'
-import HomeIcon from '@material-ui/icons/Home';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import FolderIcon from '@material-ui/icons/Folder';
+
 import Home from './Home';
 import Github from './Github';
 import Contact from './Contact';
+
+import { useMediaQuery } from 'react-responsive'
 
 // TO DO: get github tab filled out
 // maybe fix contact info
@@ -21,27 +24,44 @@ import Contact from './Contact';
 
 const Content = () => {
 
-    const [value, setValue] = useState(0)
+    const [value, setValue] = useState(0);
 
     const handleChange = (e, newValue) => {
         setValue(newValue)
-    }
+    };
+
+
+    const isTabletOrMobileDevice = useMediaQuery({
+        query: '(min-device-width: 1440px)'
+      });
+
+    const isLargeDesktop = useMediaQuery({
+        query: '(min-device-width: 2560px)'
+    })
+
+
     return (
-        <div>
+        <div style = {{width: 'inherit' }}>
             <HeaderContentDiv>
-                <MyAvatar alt='Andrew Hua' src={require('./my_face.JPG')}/>
+                {isTabletOrMobileDevice && 
+                <MyAvatar alt='Andrew Hua' src={require('./my_face.JPG')}/>}
                 <MyTabs
                     value={value}
                     onChange={handleChange}
+                    style={{height: isLargeDesktop ? '5rem' : '3rem'}}
+                    centered={!isTabletOrMobileDevice}
                 > 
                     <MyTab 
-                        icon={<HomeIcon/>}
+                        style={{height: isLargeDesktop ? '5rem' : '3rem'}}
+                        icon={<ResponsiveHomeIcon/>}
                     />
                     <MyTab 
-                        icon={<GitHubIcon/>}
+                        style={{height: isLargeDesktop ? '5rem' : '3rem'}}
+                        icon={<ResponsiveGitHubIcon/>}
                     />
                     <MyTab 
-                        icon={<FolderIcon/>}
+                        style={{height: isLargeDesktop ? '5rem' : '3rem'}}
+                        icon={<ResponsiveFolderIcon/>}
                     />
                 </MyTabs>
             </HeaderContentDiv>
