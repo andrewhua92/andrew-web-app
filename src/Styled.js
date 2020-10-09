@@ -65,7 +65,7 @@ export const MyPaper = styled(Paper)`
     && {
         display: flex;
         width: 90vw;
-        height: 92vh;
+        height: 90vh;
         margin: auto;
         margin-top: 40px;
         background: rgba(0,0,0,0.3);
@@ -73,7 +73,6 @@ export const MyPaper = styled(Paper)`
 
         @media ${device.tablet}{
             width: 70vw;
-            height: 90vh;
         }
 
  
